@@ -1,0 +1,43 @@
+{
+  "name": "datashaman/elasticsearch-builder",
+  "description": "Query builder for Elasticsearch.",
+  "keywords": [
+    "aggregations",
+    "elasticsearch",
+    "facets",
+    "search"
+  ],
+  "license": "Apache-2.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Marlin Forbes",
+      "email": "marlinf@datashaman.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "elasticsearch/elasticsearch": ">=2"
+  },
+  "require-dev": {
+    "ext-sqlite3": "*",
+    "mockery/mockery": "*",
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datashaman\\Elasticsearch\\Builder\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Datashaman\\Elasticsearch\\Builder\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
